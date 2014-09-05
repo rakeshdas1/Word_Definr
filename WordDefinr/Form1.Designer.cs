@@ -30,6 +30,7 @@
         {
             this.txtWords = new System.Windows.Forms.RichTextBox();
             this.btnDefine = new System.Windows.Forms.Button();
+            this.lblCopied = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtWords
@@ -50,17 +51,26 @@
             this.btnDefine.UseVisualStyleBackColor = true;
             this.btnDefine.Click += new System.EventHandler(this.btnDefine_Click);
             // 
+            // lblCopied
+            // 
+            this.lblCopied.AutoSize = true;
+            this.lblCopied.Location = new System.Drawing.Point(83, 236);
+            this.lblCopied.Name = "lblCopied";
+            this.lblCopied.Size = new System.Drawing.Size(0, 13);
+            this.lblCopied.TabIndex = 2;
+            // 
             // WordDefinr
             // 
-            this.AcceptButton = this.btnDefine;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.lblCopied);
             this.Controls.Add(this.btnDefine);
             this.Controls.Add(this.txtWords);
             this.Name = "WordDefinr";
             this.Text = "Word Definr";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -68,6 +78,7 @@
 
         private System.Windows.Forms.RichTextBox txtWords;
         private System.Windows.Forms.Button btnDefine;
+        private System.Windows.Forms.Label lblCopied;
     }
 }
 
